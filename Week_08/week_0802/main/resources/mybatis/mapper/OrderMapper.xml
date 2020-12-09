@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="week_0802.main.resources.mybatis.mapper.OrderMapper" >
+    <sql id="Base_Column_List" >
+        order_id, user_id
+    </sql>
+
+    <insert id="insertOne" parameterType="week0802.main.code.entity.Order" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO simple_order
+            (order_id, user_id)
+        VALUES
+            (#{order_id}, #{user_id})
+    </insert>
+
+    <delete id="delete">
+        delete from simple_order where order_id = #{id}
+    </delete>
+
+    <update id="update" parameterType="week0802.main.code.entity.Order">
+        UPDATE simple_order
+        SET
+        <trim suffixOverrides="," suffix="WHERE id = #{id}">
+            <if test="order_id != null">order_id = #{order_id},</if>
+            <if test="user_id != null">user_id = #{user_id},</if>
+        </trim>
+    </update>
+
+    <select id="query" resultType="HashMap" parameterType="HashMap">
+        select <include refid="Base_Column_List" /> from simple_order
+        <trim prefix="WHERE" prefixOverrides="AND |OR ">
+            <if test="order_id != null">
+                order_id = #{order_id}
+            </if>
+            <if test="user_id != null">
+                and user_id = #{user_id}
+            </if>
+        </trim>
+    </select>
+
+</mapper>
