@@ -1,0 +1,20 @@
+Java HotSpot(TM) 64-Bit Server VM (25.271-b09) for bsd-amd64 JRE (1.8.0_271-b09), built on Sep 16 2020 16:54:38 by "java_re" with gcc 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)
+Memory: 4k page, physical 67108864k(1190040k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:InitialHeapSize=4294967296 -XX:MaxHeapSize=4294967296 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseG1GC 
+2020-10-29T06:26:52.552-0800: 0.163: [GC pause (G1 Evacuation Pause) (young) 204M->72M(4096M), 0.0268556 secs]
+2020-10-29T06:26:52.598-0800: 0.209: [GC pause (G1 Evacuation Pause) (young) 250M->127M(4096M), 0.0204955 secs]
+2020-10-29T06:26:52.636-0800: 0.247: [GC pause (G1 Evacuation Pause) (young) 305M->175M(4096M), 0.0189613 secs]
+2020-10-29T06:26:52.671-0800: 0.282: [GC pause (G1 Evacuation Pause) (young) 353M->237M(4096M), 0.0234671 secs]
+2020-10-29T06:26:52.711-0800: 0.323: [GC pause (G1 Evacuation Pause) (young) 415M->291M(4096M), 0.0208653 secs]
+2020-10-29T06:26:52.748-0800: 0.359: [GC pause (G1 Evacuation Pause) (young) 469M->342M(4096M), 0.0190490 secs]
+2020-10-29T06:26:52.786-0800: 0.397: [GC pause (G1 Evacuation Pause) (young) 520M->403M(4096M), 0.0214219 secs]
+2020-10-29T06:26:52.824-0800: 0.435: [GC pause (G1 Evacuation Pause) (young) 595M->467M(4096M), 0.0249007 secs]
+2020-10-29T06:26:52.881-0800: 0.492: [GC pause (G1 Evacuation Pause) (young) 719M->549M(4096M), 0.0365176 secs]
+2020-10-29T06:26:52.941-0800: 0.552: [GC pause (G1 Evacuation Pause) (young) 809M->635M(4096M), 0.0318745 secs]
+2020-10-29T06:26:53.040-0800: 0.652: [GC pause (G1 Evacuation Pause) (young) 1037M->745M(4096M), 0.0456778 secs]
+2020-10-29T06:26:53.122-0800: 0.733: [GC pause (G1 Evacuation Pause) (young) 1105M->851M(4096M), 0.0359084 secs]
+2020-10-29T06:26:53.264-0800: 0.876: [GC pause (G1 Evacuation Pause) (young) 1461M->999M(4096M), 0.0613425 secs]
+2020-10-29T06:26:53.372-0800: 0.983: [GC pause (G1 Evacuation Pause) (young) 1505M->1119M(4096M), 0.0458778 secs]
