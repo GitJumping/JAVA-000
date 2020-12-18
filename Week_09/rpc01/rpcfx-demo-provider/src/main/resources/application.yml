@@ -1,0 +1,6 @@
+server:
+  port: 9898
+  
+  profiles:
+    active: true
+
