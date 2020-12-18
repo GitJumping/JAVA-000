@@ -1,8 +1,8 @@
 package io.kimmking.rpcfx.client.netty.service;
 
-import io.kimmking.rpcfx.client.service.nettyclient.handler.HttpJsonRequestEncoder;
-import io.kimmking.rpcfx.client.service.nettyclient.handler.ReconnectHandler;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.HostAndPortConfig;
+import io.kimmking.rpcfx.client.netty.service.handler.ReconnectHandler;
+import io.kimmking.rpcfx.client.netty.service.handler.HttpJsonRequestEncoder;
+import io.kimmking.rpcfx.client.netty.service.vo.HostAndPortConfig;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
@@ -47,10 +47,6 @@ public class CustomChannelInitializer extends ChannelInitializer<Channel> {
          */
         pipeline.addLast(new HttpJsonRequestEncoder());
 
-
         pipeline.addLast(new HttpResponseHandler());
-
     }
-
-
 }

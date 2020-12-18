@@ -1,10 +1,12 @@
 package io.kimmking.rpcfx.client.netty.service.handler;
 
-import io.kimmking.rpcfx.client.service.nettyclient.NettyClient;
+import io.kimmking.rpcfx.client.netty.service.NettyClient;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.Attribute;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class ReconnectHandler extends ChannelInboundHandlerAdapter {
     private NettyClient tcpClient;
 

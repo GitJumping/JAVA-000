@@ -1,7 +1,7 @@
 package io.kimmking.rpcfx.client.netty.service.pool;
 
-import io.kimmking.rpcfx.client.service.nettyclient.vo.HostAndPortConfig;
-import io.kimmking.rpcfx.client.utils.ModuleUtils;
+import io.kimmking.rpcfx.client.netty.service.vo.HostAndPortConfig;
+import io.kimmking.rpcfx.client.util.ModuleUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;

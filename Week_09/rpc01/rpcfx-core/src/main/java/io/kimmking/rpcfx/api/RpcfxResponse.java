@@ -16,7 +16,7 @@ public class RpcfxResponse {
         this.result = result;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 

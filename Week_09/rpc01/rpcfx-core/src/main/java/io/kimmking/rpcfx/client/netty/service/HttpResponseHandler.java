@@ -1,7 +1,7 @@
 package io.kimmking.rpcfx.client.netty.service;
 
-import io.kimmking.rpcfx.client.service.nettyclient.vo.NettyHttpRequestContext;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.NettyHttpResponse;
+import io.kimmking.rpcfx.client.netty.service.vo.NettyHttpRequestContext;
+import io.kimmking.rpcfx.client.netty.service.vo.NettyHttpResponse;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.FullHttpResponse;

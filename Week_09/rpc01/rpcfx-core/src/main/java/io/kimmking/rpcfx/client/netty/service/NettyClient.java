@@ -1,11 +1,11 @@
 package io.kimmking.rpcfx.client.netty.service;
 
-import io.kimmking.rpcfx.client.service.nettyclient.util.NamedThreadFactory;
-import io.kimmking.rpcfx.client.service.nettyclient.util.NettyEventLoopFactory;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.HostAndPortConfig;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.NettyHttpRequest;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.NettyHttpRequestContext;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.NettyHttpResponse;
+import io.kimmking.rpcfx.client.netty.NamedThreadFactory;
+import io.kimmking.rpcfx.client.netty.service.util.NettyEventLoopFactory;
+import io.kimmking.rpcfx.client.netty.service.vo.HostAndPortConfig;
+import io.kimmking.rpcfx.client.netty.service.vo.NettyHttpRequest;
+import io.kimmking.rpcfx.client.netty.service.vo.NettyHttpRequestContext;
+import io.kimmking.rpcfx.client.netty.service.vo.NettyHttpResponse;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.*;

@@ -1,6 +1,6 @@
 package io.kimmking.rpcfx.client.netty.service.vo;
 
-import io.kimmking.rpcfx.client.utils.ModuleUtils;
+import io.kimmking.rpcfx.client.util.ModuleUtils;
 import io.netty.handler.codec.http.HttpMethod;
 import lombok.Data;
 

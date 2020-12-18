@@ -1,6 +1,6 @@
 package io.kimmking.rpcfx.client.netty.service.pool;
 
-import io.kimmking.rpcfx.client.service.nettyclient.NettyClient;
+import io.kimmking.rpcfx.client.netty.service.NettyClient;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.pool2.PooledObject;
 import org.apache.commons.pool2.PooledObjectFactory;

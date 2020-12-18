@@ -1,6 +1,6 @@
 package io.kimmking.rpcfx.client.util;
 
-import io.kimmking.rpcfx.client.service.nettyclient.util.NamedThreadFactory;
+import io.kimmking.rpcfx.client.netty.NamedThreadFactory;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;

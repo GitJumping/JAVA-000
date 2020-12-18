@@ -2,15 +2,16 @@ package io.kimmking.rpcfx.client.netty.service.util;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import io.kimmking.rpcfx.client.service.nettyclient.NettyClient;
-import io.kimmking.rpcfx.client.service.nettyclient.pool.NettyClientPool;
-import io.kimmking.rpcfx.client.service.nettyclient.pool.NettyClientPoolCacheByHostAndPort;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.HostAndPortConfig;
-import io.kimmking.rpcfx.client.service.nettyclient.vo.NettyHttpResponse;
-import io.kimmking.rpcfx.client.utils.ModuleUtils;
+import io.kimmking.rpcfx.client.netty.service.NettyClient;
+import io.kimmking.rpcfx.client.netty.service.pool.NettyClientPool;
+import io.kimmking.rpcfx.client.netty.service.pool.NettyClientPoolCacheByHostAndPort;
+import io.kimmking.rpcfx.client.netty.service.vo.HostAndPortConfig;
+import io.kimmking.rpcfx.client.netty.service.vo.NettyHttpResponse;
+import io.kimmking.rpcfx.client.util.ModuleUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.time.StopWatch;
 
+@Slf4j
 public class NettyHttpClientUtils {
     public static NettyHttpResponse doPost(String url, Object body) {
         if (body instanceof String) {

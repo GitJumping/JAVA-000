@@ -1,6 +1,6 @@
 package io.kimmking.rpcfx.client.netty.service.handler;
 
-import io.kimmking.rpcfx.client.service.nettyclient.vo.NettyHttpRequest;
+import io.kimmking.rpcfx.client.netty.service.vo.NettyHttpRequest;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
