@@ -6,6 +6,8 @@ public class KmqConsumer<T> {
 
     private Kmq kmq;
 
+    private int readIndex;
+
     public KmqConsumer(KmqBroker broker) {
         this.broker = broker;
     }
@@ -16,7 +18,11 @@ public class KmqConsumer<T> {
     }
 
     public KmqMessage<T> poll(long timeout) {
-        return kmq.poll(timeout);
+        KmqMessage kmqMessage = kmq.poll(readIndex, timeout);
+        if (kmqMessage != null) {
+            readIndex++;
+        }
+        return kmqMessage;
     }
 
 }
